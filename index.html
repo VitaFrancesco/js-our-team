@@ -11,24 +11,99 @@
 </head>
 <body>
     <main>
-        <section id="ourTeam" class="container">
+        <section class="container">
             <h1 class="text-center text-danger fw-bold my-5">Meet our Team</h1>
             <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sunt rem unde consectetur et eius doloribus tempore maxime dignissimos culpa? Consequuntur, obcaecati ipsa? Id error molestias vel, quaerat maxime deleniti.</p>
-            <div class="col-12 col-sm-6 col-lg-4">
-                <div class="mx-5 mx-sm-0">
-                    <div class="d-flex align-items-start">
-                        <div>
-                            <img src="./img/male1.png" class="flex-shrink-1 mh-100" alt="Designer">
-
+            <div id="ourTeam" class="row row-gap-3">
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="d-flex flex-row height-120px team-card">
+                        <img src="" class="img-fluid">
+                        <div class="text-white bg-dark p-3 flex-grow-1">
+                            <h5 class="fw-bold"></h5>
+                            <p class="role-professionist"></p>
+                            <a href="#" class="text-decoration-none"></a>
                         </div>
-                        <div class="flex-grow-1 text-white bg-dark">
-                            <h5 class="fw-bold">Marco Bianchi</h5>
-                            <p>Designer</p>
-                            <a href="#" class="text-decoration-none">marcobianchi&#64;team.com</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="d-flex flex-row height-120px">
+                        <img src="" class="img-fluid">
+                        <div class="text-white bg-dark p-3 flex-grow-1">
+                            <h5 class="fw-bold"></h5>
+                            <p class="role-professionist"></p>
+                            <a href="#" class="text-decoration-none"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="d-flex flex-row height-120px">
+                        <img src="" class="img-fluid">
+                        <div class="text-white bg-dark p-3 flex-grow-1">
+                            <h5 class="fw-bold"></h5>
+                            <p class="role-professionist"></p>
+                            <a href="#" class="text-decoration-none"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="d-flex flex-row height-120px">
+                        <img src="" class="img-fluid">
+                        <div class="text-white bg-dark p-3 flex-grow-1">
+                            <h5 class="fw-bold"></h5>
+                            <p class="role-professionist"></p>
+                            <a href="#" class="text-decoration-none"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="d-flex flex-row height-120px">
+                        <img src="" class="img-fluid">
+                        <div class="text-white bg-dark p-3 flex-grow-1">
+                            <h5 class="fw-bold"></h5>
+                            <p class="role-professionist"></p>
+                            <a href="#" class="text-decoration-none"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xl-4">
+                    <div class="d-flex flex-row height-120px">
+                        <img src="" class="img-fluid">
+                        <div class="text-white bg-dark p-3 flex-grow-1">
+                            <h5 class="fw-bold"></h5>
+                            <p class="role-professionist"></p>
+                            <a href="#" class="text-decoration-none"></a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="container my-5">
+            <form action class="row row-gap-4" id="addProfessionist">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <label for="fullname" class="form-label">Nome e Cognome</label>
+                    <input type="text" class="form-control" id="fullname" placeholder="Inserisci il nome completo" required>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <label for="roleMember" class="form-label">Ruolo del membro</label>
+                    <input type="text" class="form-control" id="roleMember" placeholder="Inserisci il ruolo del membro" required>
+                </div>
+                <div class="col-12 col-md-4">
+                    <label for="emailMember" class="form-label">Email del membro</label>
+                    <input type="email" class="form-control" id="emailMember" placeholder="Inserisci il ruolo del membro" required>
+                </div>
+                <div class="col-12">
+                    <label for="selectImg" class="form-label">Immagine professionista</label>
+                    <select class="form-select" id="selectImg">
+                        <option value="img/francesco.png" selected>Francesco</option>
+                        <option value="img/Naruto_Eremita.webp">Naruto</option>
+                        <option value="img/neymar.jpg">Neymar</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-center column-gap-4">
+                    <button type="submit" class="btn btn-primary">Genera</button>
+                </div>
+                
+            </form>
         </section>
     </main>
     
